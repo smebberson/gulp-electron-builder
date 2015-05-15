@@ -1,0 +1,27 @@
+{
+  "name": "gulp-electron-builder",
+  "version": "0.0.1",
+  "description": "A gulp.js plugin to build electron projects.",
+  "main": "plugin.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smebberson/gulp-electron-builder.git"
+  },
+  "keywords": [
+    "gulpplugin",
+    "electron"
+  ],
+  "author": "Scott Mebberson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smebberson/gulp-electron-builder/issues"
+  },
+  "homepage": "https://github.com/smebberson/gulp-electron-builder",
+  "dependencies": {
+    "async": "^0.9.0",
+    "fs-extra": "^0.18.3",
+    "fs-jetpack": "^0.6.4",
+    "gulp-util": "^3.0.4",
+    "replace": "^0.3.0"
+  }
+}
