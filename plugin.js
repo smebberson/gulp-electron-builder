@@ -228,6 +228,15 @@ module.exports = function (options, callback) {
                     replacement: options.platformResources[options.platform]['bundleIdentifier'],
                     paths: [ options.private.plist ]
                 })
+
+                // optionally, replace the version
+                if (options.version) {
+                    replace({
+                        regex: /(CFBundleVersion<\/key>\s+?<string>)[0-9]+?\.[0-9]+?\.[0-9]+?/ig,
+                        replacement: '$1' + options.version,
+                        paths: [ options.private.plist ]
+                    });
+                }
             }
 
             // now rename the actual binary
