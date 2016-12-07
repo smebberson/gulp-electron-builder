@@ -64,7 +64,7 @@ function optionDefaults (options, callback) {
     options.private.buildDir = path.resolve(options.buildDir);
 
     // setup the full path to the binaries dir
-    options.private.binariesDir = path.resolve(path.join(options.binariesDir, options.platform));
+    options.private.binariesDir = path.resolve(path.join(options.binariesDir, options.platform + '-' + options.arch));
 
     // setup the full path to the resources dir
     options.private.resourcesDir = path.resolve((options.platform === 'darwin') ?
